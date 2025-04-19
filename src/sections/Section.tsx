@@ -56,7 +56,7 @@ export default function Section() {
         <section
           id="home"
           ref={homeRef}
-          className="relative h-120 md:min-h-screen w-full flex flex-col items-center"
+          className="relative min-h-screen md:min-h-screen w-full flex flex-col items-center"
         >
           <Home />
         </section>
@@ -65,7 +65,7 @@ export default function Section() {
         <section
           id="about"
           ref={aboutRef}
-          className="relative h-150 md:min-h-screen w-full flex items-center justify-center"
+          className="relative min-h-screen md:min-h-screen w-full flex items-center justify-center"
         >
           <AboutMe setActiveSection={setActiveSection} />
         </section>

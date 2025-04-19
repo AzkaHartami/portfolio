@@ -13,7 +13,7 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="flex flex-col items-center text-center pt-50">
+    <div className="flex flex-col items-center text-center pt-100 md:pt-50">
       <h1 className="text-4xl md:text-[64px] font-extrabold text-black dark:text-white animate-typing">
         AZKA HARTAMI
       </h1>
