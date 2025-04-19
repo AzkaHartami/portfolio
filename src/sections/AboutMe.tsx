@@ -21,7 +21,7 @@ export default function AboutMe({ setActiveSection }: AboutMeProps) {
         <img
           src={hero}
           alt="Profile"
-          className="rounded-[70px] w-[466px] h-[440px] object-cover object-top"
+          className="rounded-[70px] w-[266px] h-[240px] md:w-[466px] md:h-[440px] object-cover object-top"
         />
       </div>
 
@@ -30,7 +30,7 @@ export default function AboutMe({ setActiveSection }: AboutMeProps) {
         <h2 className="text-[32px] md:text-[42px] font-extrabold text-gray-900 dark:text-white p-0">
           About Me
         </h2>
-        <p className="text-[12px] md:text-[18px] text-gray-800 dark:text-gray-300 leading-relaxed text-justify mb-10 max-w-3xl pr-90">
+        <p className="text-[12px] md:text-[18px] text-gray-800 dark:text-gray-300 leading-relaxed text-center md:text-justify mb-2 md:mb-10 max-w-3xl px-10 md:px-0 pr-0 md:pr-80 ">
           Hi, I'm a fresh graduate with a{" "}
           <strong>Computer Science Bachelor's</strong> degree from{" "}
           <strong>UPN "Veteran" Yogyakarta</strong>. I specialize in{" "}
@@ -42,36 +42,36 @@ export default function AboutMe({ setActiveSection }: AboutMeProps) {
         </p>
 
         {/* Tombol */}
-        <div className="flex flex-col md:flex-row gap-3 md:gap-1 justify-center md:justify-start">
+        <div className="flex flex-col md:flex-row gap-1 md:gap-1 items-center justify-center md:justify-start">
           <a
             href="/your-cv.pdf"
             download
-            className="text-[12px] md:text-[18px] inline-flex items-center justify-center gap-2 px-4 py-3 md:px-6 md:py-3 
+            className="text-[12px] md:text-[18px] inline-flex items-center justify-center gap-2 py-2 md:px-6 md:py-3 
                bg-black text-white dark:bg-white dark:text-black 
                rounded-[15px] shadow hover:bg-gray-500 dark:hover:bg-gray-300 
-               hover:font-bold transition-all duration-300"
+               hover:font-bold transition-all duration-300 w-[200px] md:w-[220px]"
           >
             Download CV
-            <FaDownload className="w-5 h-5 md:w-[30px] md:h-[33px]" />
+            <FaDownload className="w-[20px] h-[23px] md:w-[30px] md:h-[33px]" />
           </a>
 
           <a
             href="https://wa.me/6281275939914"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[12px] md:text-[18px] inline-flex items-center justify-center gap-2 px-4 py-3 md:px-6 md:py-3 
+            className="text-[12px] md:text-[18px] inline-flex items-center justify-center gap-2 py-2 md:px-6 md:py-3 
                bg-black text-white dark:bg-white dark:text-black 
                rounded-[15px] shadow hover:bg-gray-500 dark:hover:bg-gray-300 
-               hover:font-bold transition-all duration-300"
+               hover:font-bold transition-all duration-300 w-[200px] md:w-[220px]"
           >
             Lets Connect!
-            <FaWhatsapp className="w-5 h-5 md:w-[30px] md:h-[33px]" />
+            <FaWhatsapp className="w-[20px] h-[23px] md:w-[30px] md:h-[33px]" />
           </a>
         </div>
       </div>
       <div
         onClick={handleScrollToTop}
-        className="font-bold absolute right-5 bottom-5 bg-[#4E4E4E] dark:bg-[#F9F9F9] p-2 rounded cursor-pointer animate-bounce"
+        className="font-bold absolute bottom-10 right-5  md:right-5 md:bottom-5 bg-[#4E4E4E] dark:bg-[#F9F9F9] p-2 rounded cursor-pointer animate-bounce"
       >
         <ArrowUp className="text-white dark:text-black" />
       </div>

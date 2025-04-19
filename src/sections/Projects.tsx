@@ -106,13 +106,13 @@ export default function Projects({ setActiveSection }: AboutMeProps) {
       <div className="w-full flex justify-center mt-7 transition-all duration-500">
         <div
           key={activeIndex}
-          className="flex flex-col items-center w-[607px] h-[411px] bg-[#272727] rounded-[20px] dark:bg-[#F9F9F9] p-4 shadow-lg animate-fade"
+          className="flex flex-col items-center w-[300px] h-[500px] md:w-[607px] md:h-[411px] bg-[#272727] rounded-[20px] dark:bg-[#F9F9F9] p-4 shadow-lg animate-fade drop-shadow-xl/50"
         >
           <img
             src={cardProjects[activeIndex].imageUrl}
             className="bg-white rounded-[15px] w-[421px] h-[192px] mt-5 dark:bg-black drop-shadow-xl/50"
           />
-          <p className="mt-5 text-white font-extrabold text-[20px] uppercase dark:text-black">
+          <p className="mt-5 text-white font-extrabold text-[16px] md:text-[20px] uppercase dark:text-black text-center">
             {cardProjects[activeIndex].title}
           </p>
           <p className="text-white text-[12px] text-center px-5 dark:text-black">
